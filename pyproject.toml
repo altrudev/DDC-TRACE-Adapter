@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ddc-trace-adapter"
+version = "0.1.0"
+description = "TRACE v0.2 export adapter for sanitized DDC Scientific Investigator execution evidence."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "Valentyn Rukhaylo", email = "altrudevelop@gmail.com"}]
+dependencies = [
+  "agentrust-trace==0.10.0",
+  "cryptography>=43,<47"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8,<9",
+  "agentrust-trace-tests==0.5.1"
+]
+
+[project.scripts]
+ddc-trace = "ddc_trace_adapter.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
