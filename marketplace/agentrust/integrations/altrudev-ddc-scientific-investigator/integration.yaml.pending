@@ -1,0 +1,32 @@
+# Rename to integration.yaml only after the released TRACE suite passes
+# and replace the conformance placeholder with the exact passing level.
+name: DDC Scientific Investigator
+vendor: Altru.dev
+integrates_with:
+  - trace
+description: >-
+  Exports sanitized DDC scientific-execution evidence as signed TRACE v0.2 software-only Trust Records.
+maintainer:
+  github: altrudev
+  email: altrudevelop@gmail.com
+repository: https://github.com/altrudev/DDC-TRACE-Adapter
+homepage: https://ddcal.ca/
+license: Apache-2.0
+tier: community
+marketplace:
+  category: Evidence & receipts
+  mark: DDC
+  keywords:
+    - scientific-agents
+    - evidence
+    - receipts
+    - governance
+    - trace
+trace_roles:
+  - record-producer
+  - external-evidence-source
+# Add only after passing the released suite:
+# trace_conformance_level: <PASSED_LEVEL>
+tested_against:
+  agentrust-trace: "0.10.0"
+  agentrust-trace-tests: "0.5.1"
