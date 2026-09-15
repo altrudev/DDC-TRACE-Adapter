@@ -1,0 +1,35 @@
+{
+  "schema": "ddc-trace-source/0.1",
+  "issued_at": 1789416000,
+  "subject": "spiffe://altru.dev/ddc/scientific-investigator",
+  "source_event_id": "INV-SCI-0003/42f5ac7bd8e64910a3c6e8f12470bd35",
+  "model": {
+    "provider": "example",
+    "model_id": "replace-with-exact-model-id"
+  },
+  "runtime": {
+    "measurement": "sha256:1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "policy": {
+    "bundle_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+    "enforcement_mode": "enforce",
+    "version": "ddc-scientific-v0.6"
+  },
+  "data_class": "internal",
+  "build_provenance": {
+    "slsa_level": 0,
+    "digest": "sha256:3333333333333333333333333333333333333333333333333333333333333333"
+  },
+  "appraisal": {
+    "status": "none",
+    "verifier": "https://ddcal.ca/"
+  },
+  "references": [
+    {
+      "rel": "behavior-trace",
+      "id": "INV-SCI-0003",
+      "resolver": "Altru.dev",
+      "digest": "sha256:4444444444444444444444444444444444444444444444444444444444444444"
+    }
+  ]
+}
